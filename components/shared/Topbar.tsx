@@ -1,7 +1,15 @@
+import Image from "next/image";
+import Link from "next/link";
+
 function Topbar () {
-    return <h1>
-        Topbar
-    </h1>
+    return (
+        <nav className="topbar">
+            <Link href="/" className="flex items-center gap-4">
+                <Image src="/assets/logo.svg" alt="logo" width={28} height={28} />
+                <p className="text-heading-bold text-light-1 maz-xs:hidden">Ropes</p>
+            </Link>
+        </nav>
+    )
 }
 
 export default Topbar;
